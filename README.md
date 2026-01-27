@@ -1,73 +1,84 @@
-# React + TypeScript + Vite
+#  React Product Catalog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive product catalog web application built with **React, TypeScript, React Router, and Tailwind CSS**.  
+The app fetches product data from the **Fake Store API** and demonstrates clean component design, API integration, routing, and responsive UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Live Demo
 
-## React Compiler
+ [https://ecommerce-product-listings.netlify.app/](https://ecommerce-product-listings.netlify.app/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+##  Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+-  Product listing page with grid layout  
+-  Search products by title  
+-  Filter products by category  
+-  Product detail page  
+-  Client-side routing with React Router  
+-  Loading states  
+-  Error handling for API failures  
+-  Fully responsive design (mobile, tablet, desktop)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+##  Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- **React**  
+- **TypeScript**  
+- **React Router**  
+- **Tailwind CSS**  
+- **Fake Store API**  
+- **Vite**
+
+---
+
+##  Responsive Layout
+
+| Device  | Products Per Row |
+|--------|-----------------|
+| Mobile | 1               |
+| Tablet | 2               |
+| Desktop| 4               |
+
+---
+
+##  Project Structure
+
+```plaintext
+
+##  Project Structure
+
+src/
+├── api/
+│   └── products.ts
+├── components/
+│   └── ProductCard.tsx
+├── pages/
+│   ├── ProductList.tsx
+│   └── ProductDetail.tsx
+├── types/
+│   └── product.ts
+├── App.tsx
+├── main.tsx
+└── index.css
+
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Installation & Setup
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Clone the repository
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+git clone 
+
+
+## Install dependencies
+
+npm install
+
+
+## Run the app locally
+
+npm run dev
