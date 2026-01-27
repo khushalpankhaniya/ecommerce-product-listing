@@ -1,6 +1,6 @@
 #  React Product Catalog
 
-A responsive product catalog web application built with **React, TypeScript, React Router, and Tailwind CSS**.  
+A responsive product catalog web application built with **React, TypeScript, React Router, Tanstack Query, and Tailwind CSS**.  
 The app fetches product data from the **Fake Store API** and demonstrates clean component design, API integration, routing, and responsive UI.
 
 ---
@@ -28,6 +28,7 @@ The app fetches product data from the **Fake Store API** and demonstrates clean 
 
 - **React**  
 - **TypeScript**  
+- **Tanstack Query**  
 - **React Router**  
 - **Tailwind CSS**  
 - **Fake Store API**  
