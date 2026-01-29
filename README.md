@@ -28,7 +28,6 @@ The app fetches product data from the **Fake Store API** and demonstrates clean 
 
 - **React**  
 - **TypeScript**  
-- **Tanstack Query**  
 - **React Router**  
 - **Tailwind CSS**  
 - **Fake Store API**  
