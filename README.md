@@ -50,7 +50,6 @@ The app fetches product data from the **Fake Store API** and demonstrates clean 
 
 ```plaintext
 
-##  Project Structure
 
 src/
 ├── api/
